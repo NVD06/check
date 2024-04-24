@@ -3,16 +3,15 @@ public class Main {
         int n = 5;
         
         for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                System.out.println(i + " chan");
-            } else {
-                System.out.println(i + " le");
-            }
+            System.out.println(i + " " + getNumberType(i));
         }
     }
 
-    public Object getNumberType(int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNumberType'");
+    public static String getNumberType(int i) {
+        if (i % 2 == 0) {
+            return "chan";
+        } else {
+            return "le";
+        }
     }
 }

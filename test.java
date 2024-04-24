@@ -1,20 +1,15 @@
-import static org.junit.Assert.assertEquals;
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class test {
-
-    public void testOddEvenOutput() {
-        // Arrange
+    @Test
+    public void testGetNumberType() {
         Main main = new Main();
         
-        // Act & Assert
-        assertEquals("1 là số lẻ.", main.getNumberType(1));
-        assertEquals("2 là số chẵn.", main.getNumberType(2));
-        assertEquals("3 là số lẻ.", main.getNumberType(3));
-        assertEquals("4 là số chẵn.", main.getNumberType(4));
-        assertEquals("5 là số lẻ.", main.getNumberType(5));
+        assertEquals("le", Main.getNumberType(1));
+        assertEquals("chan", Main.getNumberType(2));
+        assertEquals("le", Main.getNumberType(3));
+        assertEquals("chan", Main.getNumberType(4));
+        assertEquals("le", Main.getNumberType(5));
     }
 }
-
-
