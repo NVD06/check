@@ -10,4 +10,9 @@ public class Main {
             }
         }
     }
+
+    public Object getNumberType(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNumberType'");
+    }
 }
